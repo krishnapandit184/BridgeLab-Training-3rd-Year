@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #111;
+    font-family: "Times New Roman", serif;
+}
+
+
+header {
+    background-color: #2196f3;
+    text-align: center;
+    border: 1px solid white;
+}
+
+header h1 {
+    color: white;
+    font-size: 45px;
+    padding: 40px 0;
+    margin: 0;
+}
+
+
+.nav {
+    background-color: #81c7eb;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid #555;
+}
+
+.nav a {
+    color: #551a8b;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+
+.welcome {
+    background-color: #4d88b5;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #555;
+}
+
+.welcome p {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+section {
+    display: flex;
+    background-color: #f5f5f5;
+    min-height: 370px;
+}
+
+
+.left {
+    width: 70%;
+    padding: 20px 10px;
+    border-right: 1px solid #777;
+}
+
+.left h1 {
+    color: #294d5a;
+    font-size: 30px;
+    margin: 10px 0 20px 0;
+}
+
+.left hr {
+    border: none;
+    border-top: 2px solid #222;
+}
+
+
+.left img {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    float: left;
+    margin: 15px 20px 10px 18px;
+    border: 2px solid #111;
+}
+
+.left p {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: justify;
+}
+
+
+.right {
+    width: 30%;
+    background-color: #e0f4fc;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.right h1 {
+    color: #164b6b;
+    font-size: 25px;
+    margin: 10px 0 20px;
+}
+
+.right hr {
+    border: none;
+    border-top: 2px solid #12609a;
+    margin-bottom: 25px;
+}
+
+.right div {
+    margin-bottom: 20px;
+}
+
+.right img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.right h3 {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.right h4 {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+
+footer {
+    background-color: #2196f3;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid white;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}

@@ -1,0 +1,41 @@
+.container{
+    background-color: antiquewhite;
+    width: auto;
+    height: auto;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+.box{
+    border: 1px solid black;
+    width: 600px;
+    height: 100px;
+    color: wheat
+    ;
+    margin: 10px;
+}
+.box1{
+    background-color: red;
+    position: sticky;
+    left: 00px;
+    top: 10px;
+}
+.box2{
+    background-color: green;
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+.box3{
+    background-color: blue;
+    position: sticky;
+    left: 200px;
+    top: 10px;
+}
+.box4{
+    background-color: blueviolet;
+    position: sticky;
+    left: 300px;
+    top: 10px;
+}

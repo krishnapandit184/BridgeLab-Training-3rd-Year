@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    background: #111827;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Full width hero with fixed background */
+.hero {
+    min-height: 100vh;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.5)),
+        url("https://picsum.photos/1600/900?random=1");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Linear gradient section */
+.linear {
+    min-height: 70vh;
+    padding: 100px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed,
+        #db2777
+    );
+
+    background-attachment: fixed;
+}
+
+.linear h2,
+.radial h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.linear p {
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+/* Radial gradient section */
+.radial {
+    min-height: 70vh;
+    padding: 100px 10%;
+
+    background: radial-gradient(
+        circle,
+        #0f766e,
+        #064e3b,
+        #022c22
+    );
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    flex: 1;
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #111827;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    header,
+    .cards {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        display: flex;
+    }
+}
+

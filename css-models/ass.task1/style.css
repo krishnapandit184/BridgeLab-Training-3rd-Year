@@ -1,0 +1,46 @@
+body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+
+}
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    justify-content: space-between;
+}
+.box1{
+    border: 10px solid cyan;
+}
+.box2{
+    border: 10px dashed red;
+}
+.box3{
+    border: 10px groove blue;
+}
+.box4{
+    border: 10px double black;
+}
+.box5{
+    border-radius: 30%;
+}
+.box6{
+    padding: 10px;
+}
+.box7{
+    border: 5px solid pink;
+    transition: border-color 2s;
+}
+.box7:hover{
+    border-color: brown;
+}
+.box8{
+    padding: 20px;
+}

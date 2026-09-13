@@ -1,0 +1,152 @@
+/* ================================
+   ATTRIBUTE SELECTORS
+   ================================= */
+
+/* Selects only input elements whose type is text */
+input[type="text"] {
+    border: 3px solid #2563eb;
+}
+
+/* Selects links whose href starts with https */
+a[href^="https"] {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+
+/* ================================
+   PSEUDO-CLASSES
+   ================================= */
+
+/* Changes link style when mouse is over it */
+a:hover {
+    color: #dc2626;
+}
+
+/* Changes input when it receives focus */
+input:focus {
+    outline: 3px solid #f59e0b;
+}
+
+/* Selects every second list item */
+.item-list li:nth-child(2) {
+    background-color: #fde68a;
+}
+
+
+/* ================================
+   PSEUDO-ELEMENTS
+   ================================= */
+
+/* Adds content before every list item */
+.item-list li::before {
+    content: "✓ ";
+    color: green;
+}
+
+/* Adds content after every list item */
+.item-list li::after {
+    content: " ★";
+    color: orange;
+}
+
+
+/* ================================
+   COMBINATORS
+   ================================= */
+
+/* Child combinator (>) */
+/* Selects only direct p children */
+.combinator-box > p {
+    color: blue;
+}
+
+/* Adjacent sibling combinator (+) */
+/* Selects the paragraph immediately after first paragraph */
+.combinator-box p + p {
+    font-weight: bold;
+}
+
+/* General sibling combinator (~) */
+/* Selects all p elements after the span */
+.combinator-box span ~ p {
+    color: purple;
+}
+
+/* Descendant combinator */
+/* Selects all paragraphs inside combinator-box */
+.combinator-box p {
+    margin: 10px;
+}
+
+
+/* ================================
+   GENERAL PAGE STYLING
+   ================================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #0f172a;
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+}
+
+.item-list {
+    padding: 20px;
+    background-color: white;
+}
+
+.item-list li {
+    padding: 10px;
+    margin: 5px;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input,
+button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #999;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.combinator-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: white;
+}

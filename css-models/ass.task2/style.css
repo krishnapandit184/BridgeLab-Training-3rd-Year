@@ -1,0 +1,71 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Flexbox centers boxes horizontally and vertically */
+.container {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding: 30px;
+}
+
+/* Common box properties */
+.box {
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    color: white;
+
+    /* Demonstrates minimum height */
+    min-height: 120px;
+
+    /* Demonstrates maximum width */
+    max-width: 300px;
+}
+
+/* Pixel units */
+.box-one {
+    width: 200px;
+    height: 150px;
+    background-color: #2563eb;
+}
+
+/* Percentage and viewport units */
+.box-two {
+    width: 30%;
+    height: 20vh;
+    background-color: #16a34a;
+}
+
+/* em unit and overflow */
+.box-three {
+    width: 18em;
+    height: 180px;
+    background-color: #dc2626;
+
+    /* Extra content will be hidden */
+    overflow: hidden;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: white;
+}

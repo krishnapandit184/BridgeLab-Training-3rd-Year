@@ -1,0 +1,78 @@
+/* Remove default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    text-align: center;
+    padding: 20px;
+
+    background-color: #111827;
+    color: white;
+
+    z-index: 10;
+}
+
+/* Main sections need space for fixed header */
+main {
+    padding-top: 90px;
+}
+
+/* Linear gradient section */
+.linear-section {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+
+    /* Linear gradient */
+    background: linear-gradient(135deg, #60a5fa, #a855f7);
+
+    color: white;
+
+    /* Creates parallax-like effect */
+    background-attachment: fixed;
+}
+
+/* Radial gradient section */
+.radial-section {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+
+    /* Radial gradient */
+    background: radial-gradient(circle, #fbbf24, #ef4444);
+
+    color: white;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
+    padding: 15px;
+
+    background-color: #111827;
+    color: white;
+}

@@ -1,0 +1,28 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    /* transition: transform 2s ease 0s; */
+    animation: move 2s ease infinite;
+}
+/* .box:hover{
+    transform: rotate(180deg);
+    transform: scale(1.5);
+} */
+@keyframes move {
+    0%{
+        transform: translateX(0px) rotate(0deg);
+    }
+    30%{
+        transform: translate(200px) rotate(90deg);
+    }
+    50%{
+        transform: translate(200px,200px) rotate(180deg);
+    }
+    75%{
+        transform: translate(0px,200px) rotate(240deg);
+    }
+    100%{
+        transform: translateX(0px) rotate(360deg);
+    }
+}

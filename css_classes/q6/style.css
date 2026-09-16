@@ -1,0 +1,127 @@
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f5;
+    color: #222;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #283593;
+    color: white;
+}
+
+/* Flexbox centers the animation cards */
+.animation-area {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.animation-card {
+    width: 260px;
+    min-height: 220px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Moving box animation */
+.moving-box {
+    width: 70px;
+    height: 50px;
+    margin: 10px auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3949ab;
+    color: white;
+    border-radius: 6px;
+
+    animation-name: moveBox;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(-60px);
+    }
+    to {
+        transform: translateX(60px);
+    }
+}
+
+/* Bouncing ball animation */
+.ball {
+    width: 70px;
+    height: 70px;
+    margin: 10px auto 30px;
+    border-radius: 50%;
+    background: #e53935;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+
+    animation: bounce 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(25px);
+    }
+}
+
+/* Color-changing text animation with a delay */
+.changing-text {
+    margin-top: 60px;
+    animation-name: colorChange;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes colorChange {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.08);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    .animation-area {
+        flex-direction: column;
+        padding: 25px;
+    }
+}

@@ -1,0 +1,1 @@
+.container{max-width:520px;margin:40px auto;padding:24px;font:16px Arial,sans-serif}label{display:block;margin:14px 0 6px}input{width:100%;box-sizing:border-box;padding:10px}.error{display:block;min-height:18px;color:#c00;margin-top:4px}button{margin-top:16px;padding:10px 16px;cursor:pointer}#successMessage{color:green;font-weight:bold}input.invalid{border:1px solid #c00}

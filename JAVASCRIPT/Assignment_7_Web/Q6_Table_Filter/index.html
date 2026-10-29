@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Table Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Student Table Filter</h1>
+    <label for="search">Search students</label>
+    <input id="search" type="search" placeholder="Search name, branch, or CGPA">
+    <table>
+      <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+      <tbody id="studentRows">
+        <tr><td>Krishna</td><td>Computer Science</td><td>8.7</td></tr>
+        <tr><td>Aarav</td><td>Information Technology</td><td>8.2</td></tr>
+        <tr><td>Priya</td><td>Electronics</td><td>9.1</td></tr>
+        <tr><td>Rohan</td><td>Computer Science</td><td>7.8</td></tr>
+        <tr><td>Meera</td><td>Mechanical</td><td>8.5</td></tr>
+      </tbody>
+    </table>
+    <p id="noResults" hidden>No results found</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

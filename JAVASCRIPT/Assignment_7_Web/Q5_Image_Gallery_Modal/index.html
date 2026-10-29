@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery Modal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Image Gallery</h1>
+    <div id="gallery" class="gallery">
+      <img src="https://picsum.photos/id/1015/500/350" alt="Mountain river">
+      <img src="https://picsum.photos/id/1018/500/350" alt="Mountain landscape">
+      <img src="https://picsum.photos/id/1025/500/350" alt="Dog portrait">
+      <img src="https://picsum.photos/id/1035/500/350" alt="Forest river">
+      <img src="https://picsum.photos/id/1043/500/350" alt="Ocean coastline">
+      <img src="https://picsum.photos/id/106/500/350" alt="Nature scene">
+    </div>
+  </main>
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close" aria-label="Close preview">&times;</button>
+      <img id="modalImage" src="" alt="">
+      <p id="modalCaption"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

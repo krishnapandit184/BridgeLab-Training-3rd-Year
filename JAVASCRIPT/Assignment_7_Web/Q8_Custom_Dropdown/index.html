@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Dropdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Custom Dropdown</h1>
+    <div id="dropdown" class="dropdown">
+      <button id="dropdownButton" type="button" aria-expanded="false">Choose an option</button>
+      <ul id="options" class="options" hidden>
+        <li><button type="button" data-value="JavaScript">JavaScript</button></li>
+        <li><button type="button" data-value="HTML">HTML</button></li>
+        <li><button type="button" data-value="CSS">CSS</button></li>
+        <li><button type="button" data-value="Node.js">Node.js</button></li>
+      </ul>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
